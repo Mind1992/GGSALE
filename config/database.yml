@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: gigisale_development
+
+test:
+  adapter: postgresql
+  database: gigisale_test
