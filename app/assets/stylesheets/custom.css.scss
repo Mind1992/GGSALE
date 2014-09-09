@@ -12,4 +12,20 @@
   line-height: 1;
 }
 
-body { padding-top: 70px; }
+body { 
+	padding-top: 70px;
+}
+
+.center_div {
+	margin: 0 auto;
+	width:80%;
+}
+
+.remember_box {
+	display: inline-block;
+	margin-left: 240px;
+}
+
+.forgot_pass {
+	margin-left: 490px;
+}
