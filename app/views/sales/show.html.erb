@@ -3,9 +3,9 @@
 		<h1 class="text-center"><%= @sale.title %></h1>
 		<h2 class="text-center"><%= @sale.address %></h2>
 		<%= image_tag @sale.picture.url, class: "img-responsive img-thumbnail" %>
-		<p>Description: <%= @sale.description %></p>
-		<p><%= @sale.format_date %></p>
-		<p><%= @sale.format_time %></p>
+		<p class="text-center">Description: <%= @sale.description %></p>
+		<p class="text-center"><%= @sale.format_date %></p>
+		<p class="text-center"><%= @sale.format_time %></p>
 	</div>
 </div>
 
