@@ -7,5 +7,4 @@ class User < ActiveRecord::Base
   validates_presence_of :username
 
   has_many :sales
-  has_many :pictures, through: :sales
 end
