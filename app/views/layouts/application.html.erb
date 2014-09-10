@@ -41,9 +41,6 @@
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
 <% end %>
-<% if user_signed_in? %>
-  <%= link_to "Add Sale", new_sale_path, class: "btn btn-success btn-lg" %>
-<% end %>
 <%= yield %>
 
 </body>
