@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'factory_girl_rails'
 gem 'devise'
+gem "paperclip"
 
 group :development do
   gem 'better_errors'
