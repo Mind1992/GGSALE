@@ -12,6 +12,7 @@ gem 'turbolinks'
 gem 'factory_girl_rails'
 gem 'devise'
 gem "paperclip"
+gem 'remotipart'
 
 group :development do
   gem 'better_errors'

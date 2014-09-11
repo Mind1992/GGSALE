@@ -1,7 +1,6 @@
 <div class="container-fluid center_div">
-<h2 class="col-sm-offset-3 col-sm-6 text-center">Add a sale</h2>
-
-<%= form_for(@sale, :html => {role: "form", class: "form-horizontal", :multipart => true}) do |f| %>
+<%= form_for @sale, :html => {role: "form", class: "form-horizontal", :multipart => true}, remote: true do |f| %>
+  <h2 class="col-sm-offset-3 col-sm-6 text-center">Add a sale</h2>
   <div class="form-group">
  		<div class="col-sm-offset-3 col-sm-6">
       <%= f.label "Address, City, State" %>

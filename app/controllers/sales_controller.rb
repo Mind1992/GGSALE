@@ -11,7 +11,10 @@ class SalesController < ApplicationController
 		@sale = Sale.new(sale_params)
 		@sale.user_id = current_user.id
 		if @sale.save
-			 redirect_to root_path, notice: "New sale was added." 
+			respond_to do |format|
+			 format.html { redirect_to root_path, notice: "New sale was added." }
+			 format.js
+			end
 		else
 			'new'
 		end
