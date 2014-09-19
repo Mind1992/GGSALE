@@ -1,10 +1,10 @@
 <div class="row">
-	<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
 		<h1 class="text-center"><%= @sale.title %></h1>
 		<h2 class="text-center"><%= @sale.address %></h2>
 
-    <div style='width: 800px;'>
-      <div id="map" style='width: 800px; height: 400px;'></div>
+    <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+      <div id="map" class="img-responsive"></div>
     </div>
 
 		<%= image_tag @sale.picture.url, class: "img-responsive img-thumbnail" %>

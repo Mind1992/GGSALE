@@ -20,12 +20,12 @@ class SalesController < ApplicationController
 		end
 	end
 
-	def show 
+	def show
 		@sale = Sale.find(params[:id])
 	end
 
 	private
-	
+
 	def sale_params
 		params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id, :picture)
 	end
