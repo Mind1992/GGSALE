@@ -13,6 +13,8 @@ gem 'factory_girl_rails'
 gem 'devise'
 gem "paperclip"
 gem 'remotipart'
+gem "geocoder"
+gem 'gmaps4rails','2.1.2'
 
 group :development do
   gem 'better_errors'
