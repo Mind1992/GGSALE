@@ -1,4 +1,10 @@
 <div class="row">
+	<li class="col-xs-3">
+	<% @sale.photos.each do |photo| %>
+		<%= link_to image_tag(photo.image.thumb('180x180#').url, class: 'img-thumbnail'),
+         photo.image.remote_url, target: '_blank' %>
+  <% end %>
+</li>
 	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
 		<h1 class="text-center"><%= @sale.title %></h1>
 		<h2 class="text-center"><%= @sale.address %></h2>
