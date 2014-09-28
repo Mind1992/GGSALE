@@ -1,5 +1,8 @@
 @import "bootstrap";
 @import 'bootstrap/theme';
+@import "compass/css3/transition";
+@import "compass/css3/opacity";
+@import "compass/css3/border-radius";
 
 #logo {
   float: left;
@@ -26,3 +29,65 @@ body {
 	margin-left: 5px;
 }
 
+#photos-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  clear: both;
+  li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-height: 272px;
+    max-height: 272px;
+    margin-bottom: 10px;
+    text-align: center;
+    img {
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      height: 40px;
+      overflow: hidden;
+    }
+  }
+}
+
+.progress-wrapper {
+  display: none;
+}
+
+#dropzone {
+  background: palegreen;
+  width: 600px;
+  text-align: center;
+  font-weight: bold;
+  height: 200px;
+  line-height: 50px;
+  border: 1px solid darken(palegreen, 10%);
+  @include border-radius(10px);
+  margin: 0 auto 20px;
+}
+ 
+#dropzone.in {
+  width: 1000px;
+  height: 300px;
+  line-height: 200px;
+  font-size: larger;
+}
+ 
+#dropzone.hover {
+  background: lawngreen;
+  border: 1px solid darken(lawngreen, 10%);
+}
+ 
+#dropzone.fade {
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+  @include transition-timing-function(ease-out);
+  @include opacity(1);
+}
+
+#file-field {
+  display: none;
+}

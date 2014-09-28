@@ -14,6 +14,9 @@ gem 'devise'
 gem 'remotipart'
 gem 'dragonfly'
 gem 'dragonfly-s3_data_store'
+gem 'jquery-fileupload-rails', github: 'Springest/jquery-fileupload-rails'
+gem 'compass-rails'
+gem 'compass'
 
 
 
