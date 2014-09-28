@@ -5,6 +5,7 @@ class SalesController < ApplicationController
 
 	def new
 		@sale = Sale.new
+		@sale.photos.build
 	end
 
 	def create
@@ -27,6 +28,8 @@ class SalesController < ApplicationController
 	private
 
 	def sale_params
-		params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id)
+		params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id, photos_attributes: [:id, :image, :sale_id])
 	end
+
+  
 end

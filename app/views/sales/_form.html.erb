@@ -43,6 +43,15 @@
       <%= f.time_field :end_time, class: "form-control"%>
     </div>
   </div>
+  <%= f.fields_for :photos do |builder| %>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-6">
+      <%= builder.label :image %>
+      <%= builder.file_field :image, required: true, class: "form-control"%>
+    </div>
+  </div>
+  <% end %>
+
   <div class="form-group">
      <div class="col-sm-offset-3 col-sm-6 text-center">
         <%= f.submit "Submit Sale", class: "btn btn-default" %>

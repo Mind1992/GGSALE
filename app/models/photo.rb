@@ -1,4 +1,6 @@
 class Photo < ActiveRecord::Base
+  extend Dragonfly::Model
+  belongs_to :sale
   dragonfly_accessor :image
  
   validates :image, presence: true
