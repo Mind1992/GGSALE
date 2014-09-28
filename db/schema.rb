@@ -11,26 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140919172242) do
+ActiveRecord::Schema.define(version: 20140928043951) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "photos", force: true do |t|
+    t.integer "sale_id"
+  end
+
+  add_index "photos", ["sale_id"], name: "index_photos_on_sale_id", using: :btree
+
   create_table "sales", force: true do |t|
-    t.string   "address"
-    t.string   "title"
-    t.text     "description"
-    t.date     "start_date"
-    t.date     "end_date"
-    t.time     "start_time"
-    t.time     "end_time"
-    t.integer  "user_id"
-    t.string   "picture_file_name"
-    t.string   "picture_content_type"
-    t.integer  "picture_file_size"
-    t.datetime "picture_updated_at"
-    t.float    "latitude"
-    t.float    "longitude"
+    t.string  "address"
+    t.string  "title"
+    t.text    "description"
+    t.date    "start_date"
+    t.date    "end_date"
+    t.time    "start_time"
+    t.time    "end_time"
+    t.integer "user_id"
   end
 
   create_table "users", force: true do |t|

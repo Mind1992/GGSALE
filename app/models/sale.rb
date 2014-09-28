@@ -1,9 +1,5 @@
 class Sale < ActiveRecord::Base
-	geocoded_by :address
-  after_validation :geocode
   belongs_to :user
-	has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
-  validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
 
   def format_time
   	unless self.start_time == nil || self.end_time == nil
