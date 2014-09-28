@@ -11,10 +11,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'factory_girl_rails'
 gem 'devise'
-gem "paperclip"
 gem 'remotipart'
-gem "geocoder"
-gem 'gmaps4rails','2.1.2'
+gem 'dragonfly'
+gem 'dragonfly-s3_data_store'
+
+
 
 group :development do
   gem 'better_errors'
@@ -33,4 +34,5 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'rack-cache', :require => 'rack/cache'
 end
