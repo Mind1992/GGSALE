@@ -9,12 +9,15 @@ class SalesController < ApplicationController
 	end
 
 	def create
-		respond_to do |format|
-			@sale = Sale.new(sale_params)
-			@sale.user_id = current_user.id
-		  @sale.save
-			format.html { redirect_to root_path, notice: "New sale was added." }
-			format.js
+		@sale = Sale.new(sale_params)
+		@sale.user_id = current_user.id
+		if @sale.save
+			respond_to do |format|
+				format.html { redirect_to new_sale_photo_path(@sale) }
+				format.js
+			end
+		else
+			'new'
 		end
 	end
 
@@ -25,7 +28,7 @@ class SalesController < ApplicationController
 	private
 
 	def sale_params
-		params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id, photos_attributes: [:id, :image, :sale_id])
+		params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id)
 	end
 
   

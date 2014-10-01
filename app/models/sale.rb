@@ -1,7 +1,6 @@
 class Sale < ActiveRecord::Base
   belongs_to :user
   has_many :photos
-  accepts_nested_attributes_for :photos
   def format_time
   	unless self.start_time == nil || self.end_time == nil
       start_time = self.start_time.to_s.split(" ")[1].slice(0..4)
