@@ -1,4 +1,5 @@
- <li class="col-xs-3">
+<div class="col-md-3" id='<%= photo.id %>'>
 	<%= link_to image_tag(photo.image.thumb('180x180#').url, class: 'img-thumbnail'),
     photo.image.remote_url, target: '_blank' %>
-</li>
+  <%= link_to "remove", sale_photo_path(photo.sale, photo), method: :delete, remote: :true %>
+</div>
