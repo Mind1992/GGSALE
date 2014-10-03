@@ -18,6 +18,7 @@ gem 'jquery-fileupload-rails', github: 'Springest/jquery-fileupload-rails'
 gem 'compass-rails'
 gem 'compass'
 gem 'geocoder'
+gem 'gmaps4rails'
 
 
 
