@@ -25,6 +25,13 @@ class SalesController < ApplicationController
 		@sale = Sale.find(params[:id])
 	end
 
+	def update
+		@sale = Sale.find(params[:id])
+		@photos = @sale.photos
+		@sale.update(sale_params)
+	end
+
+
 	private
 
 	def sale_params
