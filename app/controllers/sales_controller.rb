@@ -23,6 +23,10 @@ class SalesController < ApplicationController
 
 	def show
 		@sale = Sale.find(params[:id])
+		@hash = Gmaps4rails.build_markers(@users) do |sale, marker|
+  		marker.lat sale.latitude
+  		marker.lng sale.longitude
+		end
 	end
 
 	def update

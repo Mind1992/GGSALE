@@ -16,4 +16,6 @@
 //= require bootstrap
 //= require jquery.remotipart
 //= require jquery-fileupload/basic
+//= require underscore
+//= require gmaps/google
 //= require_tree .
