@@ -6,7 +6,7 @@
 	        <h3 class="text-center"><%= sale.title %></h3>
 	        <p class="text-center"><%= sale.format_date %></p>
 	        <p class="text-center"><%= sale.address %></p>
-	        <p class="text-center"><%= link_to "View", sale_path(sale), class: "btn btn-primary", role: "button" %></p>
+	        <p class="text-center"><%= link_to "View", sale_path(sale), class: "btn btn-primary", role: "button", 'data-no-turbolink' => true %></p>
 	  	  </div>
 		  </div>
 		<% end %>
