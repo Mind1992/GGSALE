@@ -23,9 +23,14 @@ class SalesController < ApplicationController
 
 	def show
 		@sale = Sale.find(params[:id])
-		@hash = Gmaps4rails.build_markers(@users) do |sale, marker|
+		@hash = Gmaps4rails.build_markers(@sale) do |sale, marker|
   		marker.lat sale.latitude
   		marker.lng sale.longitude
+  		marker.picture({
+  			"url" => view_context.image_path('google_map_icon.png'),
+  			"width" => 64,
+  			"height" => 64
+  			})
 		end
 	end
 
