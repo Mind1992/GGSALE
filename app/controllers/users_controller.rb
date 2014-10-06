@@ -18,7 +18,8 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		@user = User.find(params[:id])
+		@user = current_user
+		@sales = @user.sales
 	end
 
 private
