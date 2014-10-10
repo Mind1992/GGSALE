@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root to: "sales#index"
 
   resources :users 
-  resources :sales do 
+  resources :sales do
+  	put :favorite, on: :member 
   	resources :photos
   end
 end

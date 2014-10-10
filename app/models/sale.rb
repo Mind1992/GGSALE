@@ -2,7 +2,9 @@ class Sale < ActiveRecord::Base
   geocoded_by :address   
   after_validation :geocode
   belongs_to :user
-  has_many :photos
+  has_many :photos, :dependent => :destroy
+  has_many :favorite_sales
+  has_many :favorited_by, :through => :favorite_sales, :source => :user
   def format_time
   	unless self.start_time == nil || self.end_time == nil
       start_time = self.start_time.to_s.split(" ")[1].slice(0..4)

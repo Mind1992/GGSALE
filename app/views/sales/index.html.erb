@@ -4,6 +4,10 @@
 	  	<div class="col-sm-6 col-md-3">
 	    	<div class="thumbnail">
 	        <h3 class="text-center"><%= sale.title %></h3>
+	        <% if current_user %>
+  					<%= link_to "favorite",   favorite_sale_path(sale, type: "favorite"), method: :put %>
+  					<%= link_to "unfavorite", favorite_sale_path(sale, type: "unfavorite"), method: :put %>
+					<% end %>  
 	        <%= link_to image_tag(sale.photos.first.image.thumb('180x180#').url, class: 'img-thumbnail'),
 	        		sale.photos.first.image.remote_url, target: '_blank' %>
 	        <p class="text-center"><%= sale.description %></p>

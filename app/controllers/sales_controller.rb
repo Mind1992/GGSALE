@@ -40,6 +40,23 @@ class SalesController < ApplicationController
 		@sale.update(sale_params)
 	end
 
+	def favorite
+		@sale = Sale.find(params[:id])
+    type = params[:type]
+    if type == "favorite"
+      current_user.favorites << @sale
+      redirect_to :back, notice: "You favorited #{@sale.title}"
+
+    elsif type == "unfavorite"
+      current_user.favorites.delete(@sale)
+      redirect_to :back, notice: "Unfavorited #{@sale.title}"
+
+    else
+      # Type missing, nothing happens
+      redirect_to :back, notice: 'Nothing happened.'
+    end
+  end
+
 
 	private
 

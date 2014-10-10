@@ -6,5 +6,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :username
 
-  has_many :sales
+  has_many :sales, :dependent => :destroy
+  has_many :favorite_sales
+  has_many :favorites, :through => :favorite_sales, :source => :sale
 end
