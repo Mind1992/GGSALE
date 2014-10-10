@@ -1,0 +1,5 @@
+<div><%= sale.address %></div>
+<div><% sale.photos.each do |photo| %></div>
+	<div><%= link_to image_tag(photo.image.thumb('180x180#').url, class: 'img-thumbnail'),
+      photo.image.remote_url, target: '_blank' %></div>
+  <% end %>
