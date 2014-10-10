@@ -1,10 +1,12 @@
 require 'dragonfly'
+require 'dragonfly/s3_data_store'
 
 # Configure
 Dragonfly.app.configure do
   plugin :imagemagick
 
-  secret "44f0a8ad194c552f20a609a25876db24fd41776794bca72e8660b26ffd6c0faf"
+  protect_from_dos_attacks true
+  secret ENV['DRAGON']
 
   url_format "/media/:job/:name"
 
