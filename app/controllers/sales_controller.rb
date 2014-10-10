@@ -1,6 +1,19 @@
 class SalesController < ApplicationController
 	def index
-		@sales = Sale.all
+		if params[:address].present?
+      @sales = Sale.near(params[:address])
+    else
+      @sales = Sale.all
+    end
+    @hash = Gmaps4rails.build_markers(@sales) do |sale, marker|
+  		marker.lat sale.latitude
+  		marker.lng sale.longitude
+  		marker.picture({
+  			"url" => view_context.image_path('google_map_icon.png'),
+  			"width" => 64,
+  			"height" => 64
+  			})
+  	end
 	end
 
 	def new
