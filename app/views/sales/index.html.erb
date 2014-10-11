@@ -9,9 +9,11 @@
 	        <% if current_user %>
   					<%= link_to "favorite",   favorite_sale_path(sale, type: "favorite"), method: :put %>
   					<%= link_to "unfavorite", favorite_sale_path(sale, type: "unfavorite"), method: :put %>
-					<% end %>  
+					<% end %>
+					<% if sale.photos.any? %>  
 	        <%= link_to image_tag(sale.photos.first.image.thumb('180x180#').url, class: 'img-thumbnail'),
-	        		sale.photos.first.image.remote_url, target: '_blank' %>
+	        		sale_path(sale), target: '_blank' %>
+	        <% end %>
 	        <p class="text-center"><%= sale.description %></p>
 	        <p class="text-center"><%= sale.format_date %></p>
 	        <p class="text-center"><%= sale.address %></p>
@@ -19,7 +21,7 @@
 	  	  </div>
 		  </div>
 		<% end %>
-		<%= form_tag sales_path, method: :get do %>
+		<%= form_tag sales_path, 'data-no-turbolink' => true, method: :get do %>
   		<%= label :location, "Search sales near : " %>
   		<%= text_field_tag :address, params[:address] %>
   		<%= submit_tag "Search" %>
