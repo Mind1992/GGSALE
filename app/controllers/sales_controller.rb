@@ -66,17 +66,13 @@ class SalesController < ApplicationController
       redirect_to :back, notice: "Unfavorited #{@sale.title}"
 
     else
-      # Type missing, nothing happens
       redirect_to :back, notice: 'Nothing happened.'
     end
   end
-
 
 	private
 
 	def sale_params
 		params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id)
-	end
-
-  
+	end  
 end

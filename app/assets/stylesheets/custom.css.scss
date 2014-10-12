@@ -8,16 +8,50 @@
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: black;
-  text-transform: uppercase;
+  color: white;
   letter-spacing: -1px;
   padding-top: 12px;
   font-weight: bold;
   line-height: 1;
+  font: bold "Istok Web", sans-serif;
+  text-decoration: none;
+}
+
+#main-header {
+  color: #fff;
+  font-size: 60px;
+}
+
+#main-header+p {
+  color: #fff;
+  font-size: 18px;
+}
+
+#main-headers {
+  margin-top: 100px;
+}
+
+#main-search {
+  height: 45px ;
+  width: 80% ;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+#main-search-btn {
+  font-size: 18px;
 }
 
 body {
 	padding-top: 70px;
+}
+
+.session-link {
+  color: #fff;
+}
+
+.transperent-nav {
+  background-color: transparent;
 }
 
 .center_div {
@@ -90,4 +124,10 @@ body {
 
 #file-field {
   display: none;
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
 }
