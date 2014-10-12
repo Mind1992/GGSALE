@@ -1,20 +1,6 @@
 class SalesController < ApplicationController
 	def index
-		if params[:address].present?
-      @sales = Sale.near(params[:address])
-    else
-      @sales = Sale.all
-    end
-    @hash = Gmaps4rails.build_markers(@sales) do |sale, marker|
-  		marker.lat sale.latitude
-  		marker.lng sale.longitude
-  		marker.infowindow render_to_string(:partial => "/sales/my_template", :locals =>{ :sale => sale }) 
-  		marker.picture({
-  			"url" => view_context.image_path('google_map_icon.png'),
-  			"width" => 64,
-  			"height" => 64
-  			})
-  	end
+    @sales = Sale.all
 	end
 
 	def new
@@ -68,6 +54,24 @@ class SalesController < ApplicationController
     else
       redirect_to :back, notice: 'Nothing happened.'
     end
+  end
+
+  def search
+  	if params[:address].present?
+      @sales = Sale.near(params[:address])
+    else
+      @sales = Sale.all
+    end
+    @hash = Gmaps4rails.build_markers(@sales) do |sale, marker|
+  		marker.lat sale.latitude
+  		marker.lng sale.longitude
+  		marker.infowindow render_to_string(:partial => "/sales/my_template", :locals =>{ :sale => sale }) 
+  		marker.picture({
+  			"url" => view_context.image_path('google_map_icon.png'),
+  			"width" => 64,
+  			"height" => 64
+  			})
+  	end
   end
 
 	private

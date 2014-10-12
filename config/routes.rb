@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   resources :sales do
   	put :favorite, on: :member 
   	resources :photos
+  	collection do 
+  		get 'search'
+  	end
   end
 end
