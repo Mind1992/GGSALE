@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="all">
 <head>
   <title>Gigisale</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -16,30 +16,41 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body>
-<nav class="navbar navbar-top transperent-nav" role="navigation">
-  <div class="container">
-    <div class="row">
-    	<%= link_to "GGSALE", root_path, id: "logo" %>
-    	<% if user_signed_in? %>
-    	<div class="navbar-right">
-  		  <p class="navbar-text"><%= current_user.username %></p>
+<body class="all">
+  <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+    <div class="container" id="all-wrapper">
+      <div class="row">
+        <div class="col-md-5">
+          <%= link_to "GGSALE", root_path, id: "logo-all" %>
+          <%= form_tag search_sales_path, class: "navbar-form", role: "search", method: :get do %>
+            <div class="input-group">
+              <%= text_field_tag :address, params[:address], class: "form-control", placeholder: "Where are you looking for?", id: "all-search" %>
+              <div class="input-group-btn">
+                <%= submit_tag "Search", class: "btn", id: "all-search-btn", 'data-no-turbolink' => true %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <div class="col-md-7">
         <% if user_signed_in? %>
-          <%= link_to "Add Sale", new_sale_path, id: "new_sale", class: "btn btn-success navbar-btn", remote: true %>
-          <%= link_to "Manage Sales", user_path(current_user), id: "user_sales", class: "btn btn-success navbar-btn" %>
+        <div class="navbar-right">
+          <p class="navbar-text"><%= current_user.username %></p>
+          <% if user_signed_in? %>
+            <%= link_to "Add Sale", new_sale_path, id: "new_sale", class: "btn btn-success navbar-btn", remote: true %>
+            <%= link_to "Manage Sales", user_path(current_user), id: "user_sales", class: "btn btn-success navbar-btn" %>
+          <% end %>
+          <%= link_to 'Edit profile', edit_user_registration_path, class: "btn btn-default navbar-btn" %>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn all-session-links" %>
+        </div>
+        <% else %>
+          <div class="navbar-right session-links">
+            <%= link_to "Sign Up", new_user_registration_path, class: "session-links nav-links all-links" %>
+            <%= link_to "Log In", new_user_session_path, class: "session-links nav-links all-links" %>
+          </div>
         <% end %>
-  		  <%= link_to 'Edit profile', edit_user_registration_path, class: "btn btn-default navbar-btn" %>
-  		  <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn" %>
-  		</div>
-  		<% else %>
-  		<div class="navbar-right session-links">
-  		  <%= link_to "Sign Up", new_user_registration_path, class: "session-link nav-links" %>
-  		  <%= link_to "Log In", new_user_session_path, class: "session-link nav-links"%>
-  		</div>
-  		<% end %>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 <% if notice %>
 	<p class="notice alert alert-success" role="alert"><%= notice %></p>
 <% elsif alert %>

@@ -1,3 +1,26 @@
 <%= render('google_map_script') %>
 <%= render('google_map') %>
+<div id="thumb-sales">
+	<div class="container-fluid">
+	<div class="row" id="sales">
+		<% @sales.each do |sale| %>
+	  	<div class="col-lg-3">
+	    	<div class="thumbnail">
+	        <h3 class="text-center"><%= sale.title %></h3>
+	        <% if current_user %>
+  					<%= link_to "favorite",   favorite_sale_path(sale, type: "favorite"), method: :put %>
+  					<%= link_to "unfavorite", favorite_sale_path(sale, type: "unfavorite"), method: :put %>
+					<% end %>
+					<% if sale.photos.any? %>  
+	        <%= link_to image_tag(sale.photos.first.image.thumb('180x180#').url, class: 'img-thumbnail'),
+	        		sale_path(sale), target: '_blank' %>
+	        <% end %>
+	        <p class="text-center"><%= sale.description %></p>
+	        <p class="text-center"><%= sale.format_date %></p>
+	        <p class="text-center"><%= sale.address %></p>
+	        <p class="text-center"><%= link_to "View", sale_path(sale), class: "btn btn-primary", role: "button", 'data-no-turbolink' => true %></p>
+	  	  </div>
+		  </div>
+		<% end %>
+</div>
 <%= render('google_map_styles') %>
