@@ -4,12 +4,12 @@
 	<div class="row" id="sales">
 		<% @sales.each do |sale| %>
 			<a href="<%= sale_path(sale) %>" data-no-turbolink='true'>
-		  	<div class="col-lg-3">
+		  	<div class="col-lg-3 sale-thumb">
 	        <% if current_user %>
   					<%= link_to "unfavorite", favorite_sale_path(sale, type: "unfavorite"), method: :put %>
 					<% end %>
-					<% if sale.photos.any? %>
 					<div>
+					<% if sale.photos.any? %>
 		        <%= link_to image_tag(sale.photos.first.image.thumb('350x220#').url, class: 'sale-cover'),
 		        		sale_path(sale) %>
 		        <span><%= link_to glyph(:heart), favorite_sale_path(sale, type: "favorite"), class: 'icon', method: :put %></span>
