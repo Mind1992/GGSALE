@@ -4,8 +4,159 @@
 @import "compass/css3/opacity";
 @import "compass/css3/border-radius";
 
-// Google map //
+// Mobile //
 
+@media(max-width:767px) {
+
+  ul#dropdown-list a:hover {
+    background-color: #0A4544;
+  }
+
+  ul#dropdown-list a {
+    background-color: #17706E;
+  }
+
+  .btn-dropdown {
+    font-size: 1.3em;
+    height: 2.45em;
+    color: #fff !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 8px;
+    line-height: 35px !important;
+  }
+
+  #user-name {
+    color: #fff;
+  }
+
+  .caret {
+    color: #fff;
+    margin-left: 0.3em;
+  }
+
+  #logo-guest {
+    display: block;
+    width: 4em;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  #logo {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    margin-left: 0.3em;
+    letter-spacing: -1px;
+  }
+
+  .session-links {
+    padding-top: 20px;
+    width: 14em;
+    margin: 0 auto;
+    .session-link {
+      color: #fff;
+      font-size: 1.6em;
+      text-decoration: none;
+    }
+    .session-link:nth-child(1) {
+      margin-right: 23%;
+    }
+  }
+
+  #main-header {
+    color: #fff;
+    font-size: 3.7em;
+    margin-top: 33px;
+  }
+
+  #secondary-header {
+    color: #fff;
+    font-size: 1.2em;
+  }
+
+  #search-wrapper {
+    margin-top: 40px;
+    height: 8em;
+    background: rgba(0,0,0,0.6);
+    padding: 2.15em;
+  }
+
+  #main-search {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    height: 2.45em;
+    font-size: 1.3em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #main-search-btn {
+    font-size: 1.3em;
+    height: 2.45em;
+    width: 30%;
+    border-color: #ff5a5f;
+    border-bottom-color: #e00007;
+    background-color: #ff5a5f;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  #main-toggle-nav {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    color: #fff;
+    span.main-toggle-span {
+      background-color: #fff;
+    }
+  }
+}
+
+
+// Application layout //
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+
+
+#main-header {
+  color: #fff;
+}
+
+#secondary-header {
+  color: #fff;
+}
+
+body {
+  padding-top: 10px;
+}
+
+
+.transperent-nav {
+  background-color: transparent;
+}
+
+.center_div {
+  margin: 0 auto;
+  width:80%;
+}
+
+// Google map //
 #map-wrapper {
   width: 40%;
   height: 100%;
@@ -13,18 +164,14 @@
 }
 
 #map {
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 
 // All layout //
-
- .glyphicon {
-  position: absolute;
-  right: 0;
-  padding: 1px;
-  font-size: 2.4em;
-  top: 20px;
+.glyphicon-user {
+  font-size: 1.7em;
+  padding-right: 0.1em;
   color: #fff;
 }
 
@@ -60,104 +207,11 @@ body.all {
   text-decoration: none !important;
 }
 
-// Application layout //
-
-video#bgvid {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-}
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  letter-spacing: -1px;
-  padding-top: 12px;
-  font-weight: bold;
-  line-height: 1;
-  font: bold "Istok Web", sans-serif;
-  text-decoration: none;
-}
-
-#main-header {
-  color: #fff;
-  font-size: 60px;
-}
-
-#main-header+p {
-  color: #fff;
-  font-size: 18px;
-}
-
-#main-headers {
-  margin-top: 70px;
-}
-
-#main-search {
-  height: 45px ;
-  width: 80% ;
-  margin: 0 auto;
-  font-size: 16px;
-  display: inline;
-  float: left;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-#main-search-btn {
-  font-size: 16px;
-  display: inline;
-  height: 45px;
-  width: 100px;
-  border-color: #ff5a5f;
-  border-bottom-color: #e00007;
-  background-color: #ff5a5f;
-  color: #fff;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-#search-wrapper {
-  height: 100px;
-  background: rgba(0,0,0,0.6);
-  position: absolute;
-  bottom: 120px;
-  left: 0;
-  right: 0;
-  padding: 30px;
-}
-
-body {
-	padding-top: 10px;
-}
-
-.session-link {
-  color: #fff;
-}
-
-.session-links {
-  padding-top: 15px;
-}
-
-.transperent-nav {
-  background-color: transparent;
-}
-
-.center_div {
-	margin: 0 auto;
-	width:80%;
-}
-
-.nav-links {
-  padding-right: 10px;
-}
 
 // Authentication //
 
 .check_label {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 
 // Drop zone
@@ -201,19 +255,19 @@ body {
   @include border-radius(10px);
   margin: 0 auto 20px;
 }
- 
+
 #dropzone.in {
   width: 1000px;
   height: 300px;
   line-height: 200px;
   font-size: larger;
 }
- 
+
 #dropzone.hover {
   background: lawngreen;
   border: 1px solid darken(lawngreen, 10%);
 }
- 
+
 #dropzone.fade {
   @include transition-property(all);
   @include transition-duration(0.5s);

@@ -3,21 +3,26 @@
   <source src="/assets/ggsale-intro.mp4" type="video/mp4" />
 </video>
 
-<div class="container-fluid">
-	<div class="row" id="main-headers">
-		<div class="col-md-12">
-			<h1 id="main-header" class="text-uppercase text-center">Find Your Bargain</h1>
-			<p class="text-center">Buy and sell things effortlessly</p>
-		</div>
+<div class="row">
+	<div class="col-xs-12">
+		<h1 id="main-header" class="text-uppercase text-center">Find Your Bargain</h1>
 	</div>
-	<%= form_tag search_sales_path, class: "form-horizontal", role: "form", method: :get do %>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<p class="text-center" id="secondary-header">Buy and sell things effortlessly</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<%= form_tag search_sales_path, class: "form-horizontal", role: "form", method: :get do %>
 			<div id="search-wrapper">
 				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-6">
-						<%= text_field_tag :address, params[:address], placeholder: "Where do you want to look for sales?", class: "form-control", id: "main-search" %>
-						<%= submit_tag "Search", class: "btn", id: "main-search-btn", 'data-no-turbolink' => true %>
-					</div>
+					<%= text_field_tag :address, params[:address], placeholder: "Where are you looking?", class: "form-control", id: "main-search" %>
+					<%= submit_tag "Search", class: "btn", id: "main-search-btn", 'data-no-turbolink' => true %>
 				</div>
 			</div>
-	<% end %>
+		<% end %>
+	</div>
 </div>
+
