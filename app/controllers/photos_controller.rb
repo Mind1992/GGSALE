@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
     @photo = @sale.photos.new
     @photos = @sale.photos.order('created_at DESC')
   end
- 
+
   def create
     @sale = Sale.find(params[:sale_id])
     @photo = @sale.photos.new(photo_params)
@@ -21,14 +21,13 @@ class PhotosController < ApplicationController
     @photo = @sale.photos.find(params[:id])
     @photo.destroy
     respond_to do |format|
-      format.html 
+      format.html
       format.js
-    end 
+    end
   end
 
- 
-  private
- 
+private
+
   def photo_params
     params.require(:photo).permit(:image, :sale_id)
   end
