@@ -6,7 +6,7 @@ View the demo site here:
 [http://ggsale.herokuapp.com/](http://ggsale.herokuapp.com/)
 
 ## Notice
-The app is still in development and gets updated daily. Some of the built features might not be seen due to the front end redesigning process. Check out the [USER_STORIES.md](https://github.com/supremebeing7/airbnb_clone/blob/master/USER_STORIES.md) to see completed and upcoming features.
+The app is still in development and gets updated daily. Some of the built features might not be seen due to the front end redesigning process. Check out the [USER_STORIES.md](https://github.com/Mind1992/GGSALE/blob/responsive_design/USER_STORIES.md) to see completed and upcoming features.
 
 
 ## Setup
