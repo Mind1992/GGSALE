@@ -4,9 +4,9 @@
 @import "compass/css3/opacity";
 @import "compass/css3/border-radius";
 
-// Mobile //
 
-@media(max-width:767px) {
+// Mobile //
+@media only screen and (max-width: 479px) {
 
   ul#dropdown-list a:hover {
     background-color: #0A4544;
@@ -86,8 +86,13 @@
     font-size: 1.2em;
   }
 
+  #search-parent {
+    position: relative;
+  }
+
   #search-wrapper {
-    margin-top: 40px;
+    display: block;
+    margin-top: 12%;
     height: 8em;
     background: rgba(0,0,0,0.6);
     padding: 2.15em;
@@ -98,13 +103,13 @@
     display: inline-block;
     float: left;
     height: 2.45em;
-    font-size: 1.3em;
+    font-size: 1.4em;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
   #main-search-btn {
-    font-size: 1.3em;
+    font-size: 1.4em;
     height: 2.45em;
     width: 30%;
     border-color: #ff5a5f;
@@ -114,6 +119,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+
   #main-toggle-nav {
     background-color: #ff5a5f;
     border-color: #ff5a5f;
@@ -124,7 +130,376 @@
   }
 }
 
+// Mobile 2 //
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  ul#dropdown-list a:hover {
+    background-color: #0A4544;
+  }
 
+  ul#dropdown-list a {
+    background-color: #17706E;
+  }
+
+  .btn-dropdown {
+    font-size: 1.3em;
+    height: 2.45em;
+    color: #fff !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 8px;
+    line-height: 35px !important;
+  }
+
+  #user-name {
+    color: #fff;
+  }
+
+  .caret {
+    color: #fff;
+    margin-left: 0.3em;
+  }
+
+  #logo-guest {
+    display: block;
+    width: 4em;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  #logo {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    margin-left: 0.3em;
+    letter-spacing: -1px;
+  }
+
+  .session-links {
+    padding-top: 20px;
+    width: 14em;
+    margin: 0 auto;
+    .session-link {
+      color: #fff;
+      font-size: 1.6em;
+      text-decoration: none;
+    }
+    .session-link:nth-child(1) {
+      margin-right: 23%;
+    }
+  }
+
+  #main-header {
+    color: #fff;
+    font-size: 4.5em;
+    margin-top: 50px;
+  }
+
+  #secondary-header {
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+  #search-wrapper {
+    margin-top: 80px;
+    height: 8em;
+    background: rgba(0,0,0,0.6);
+    padding: 2.15em;
+  }
+
+  #main-search {
+    margin-left: 10%;
+    width: 60%;
+    display: inline-block;
+    float: left;
+    height: 2.45em;
+    font-size: 1.4em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #main-search-btn {
+    font-size: 1.4em;
+    height: 2.45em;
+    width: 20%;
+    border-color: #ff5a5f;
+    border-bottom-color: #e00007;
+    background-color: #ff5a5f;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #main-toggle-nav {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    color: #fff;
+    span.main-toggle-span {
+      background-color: #fff;
+    }
+  }
+}
+
+// Tablets //
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #user-name {
+    color: #fff;
+  }
+
+  .caret {
+    color: #fff;
+    margin-left: 0.3em;
+  }
+
+  #logo-guest {
+    display: block;
+    width: 4em;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  #logo {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    margin-left: 0.6em;
+
+    letter-spacing: -1px;
+  }
+
+  .session-links {
+    padding-top: 20px;
+    width: 59%;
+    margin: 0 auto;
+    .session-link {
+      color: #fff;
+      font-size: 1.6em;
+      text-decoration: none;
+    }
+    .session-link:nth-child(1) {
+      margin-right: 3px;
+    }
+  }
+
+  #main-header {
+    color: #fff;
+    font-size: 5em;
+    margin-top: 33px;
+  }
+
+  #secondary-header {
+    color: #fff;
+    font-size: 2em;
+  }
+
+  #search-wrapper {
+    margin-top: 80px;
+    height: 8em;
+    background: rgba(0,0,0,0.6);
+    padding: 2.15em;
+  }
+
+  #main-search {
+    margin-left: 25%;
+    width: 35%%;
+    display: inline-block;
+    float: left;
+    height: 3em;
+    font-size: 1.3em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #main-search-btn {
+    font-size: 1.3em;
+    height: 3em;
+    width: 15%;
+    border-color: #ff5a5f;
+    border-bottom-color: #e00007;
+    background-color: #ff5a5f;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #main-toggle-nav {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    color: #fff;
+    span.main-toggle-span {
+    background-color: #fff;
+    }
+  }
+
+  ul#dropdown-list a:hover {
+    background-color: #0A4544;
+  }
+
+  ul#dropdown-list a {
+    background-color: #17706E;
+  }
+
+  .btn-dropdown {
+    font-size: 1.3em;
+    height: 2.45em;
+    color: #fff !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 8px;
+    line-height: 35px !important;
+  }
+}
+
+// Desktop //
+
+@media screen and (min-width: 1025px) {
+  #main-toggle-nav {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    color: #fff;
+    span.main-toggle-span {
+    background-color: #fff;
+    }
+  }
+
+  ul#dropdown-list a:hover {
+    background-color: #0A4544;
+  }
+
+  ul#dropdown-list a {
+    background-color: #17706E;
+  }
+
+  .btn-dropdown {
+    font-size: 1em;
+    height: 2.45em;
+    color: #fff !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 9px;
+    line-height: 30px !important;
+  }
+
+  #dropdown-link {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  #user-name {
+    color: #fff;
+  }
+
+  .caret {
+    color: #fff;
+    margin-left: 0.3em;
+  }
+
+  #logo-guest {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    margin-left: 1.2em;
+    margin-top: 0.4em;
+    letter-spacing: -1px;
+  }
+
+  #logo {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-top: 0.4em;
+    margin-right: 2.3em;
+    letter-spacing: -1px;
+  }
+
+  .session-links {
+    padding-top: 20px;
+    width: 14em;
+    margin: 0 auto;
+    .session-link {
+      color: #fff;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    .session-link:nth-child(1) {
+      margin-right: 23%;
+    }
+  }
+
+  #main-header {
+    color: #fff;
+    font-size: 4.5em;
+    margin-top: 90px;
+  }
+
+  #secondary-header {
+    color: #fff;
+    font-size: 1.2em;
+  }
+
+  #search-wrapper {
+    margin-top: 120px;
+    height: 8em;
+    background: rgba(0,0,0,0.6);
+    padding: 2.15em;
+  }
+
+  #main-search {
+    margin-left: 30%;
+    width: 30%%;
+    display: inline-block;
+    float: left;
+    height: 3em;
+    font-size: 1.3em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #main-search-btn {
+    font-size: 1.3em;
+    height: 3em;
+    width: 11%;
+    border-color: #ff5a5f;
+    border-bottom-color: #e00007;
+    background-color: #ff5a5f;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
 // Application layout //
 
 video#bgvid {
