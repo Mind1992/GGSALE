@@ -71,7 +71,7 @@
       text-decoration: none;
     }
     .session-link:nth-child(1) {
-      margin-right: 23%;
+      margin-right: 22%;
     }
   }
 
@@ -167,7 +167,7 @@
     margin: 0 auto;
     text-decoration: none;
     color: #fff;
-    font-size: 2.7em;
+    font-size: 2.8em;
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
     letter-spacing: -1px;
@@ -178,7 +178,7 @@
     float: left;
     text-decoration: none;
     color: #fff;
-    font-size: 2.7em;
+    font-size: 2.8em;
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
     margin-left: 0.3em;
@@ -191,11 +191,11 @@
     margin: 0 auto;
     .session-link {
       color: #fff;
-      font-size: 1.6em;
+      font-size: 1.7em;
       text-decoration: none;
     }
     .session-link:nth-child(1) {
-      margin-right: 23%;
+      margin-right: 19%;
     }
   }
 
@@ -263,14 +263,15 @@
   }
 
   #logo-guest {
-    display: block;
-    width: 4em;
-    margin: 0 auto;
+    display: inline-block;
+    float: left;
     text-decoration: none;
     color: #fff;
-    font-size: 2.7em;
+    font-size: 2.2em;
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
+    margin-left: 1.2em;
+    margin-top: 0.4em;
     letter-spacing: -1px;
   }
 
@@ -279,32 +280,31 @@
     float: left;
     text-decoration: none;
     color: #fff;
-    font-size: 2.7em;
+    font-size: 2.8em;
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
-    margin-left: 0.6em;
-
+    margin-left: 0.5em;
     letter-spacing: -1px;
   }
 
   .session-links {
     padding-top: 20px;
-    width: 59%;
+    width: 14em;
     margin: 0 auto;
     .session-link {
       color: #fff;
-      font-size: 1.6em;
+      font-size: 1.4em;
       text-decoration: none;
     }
     .session-link:nth-child(1) {
-      margin-right: 3px;
+      margin-right: 18%;
     }
   }
 
   #main-header {
     color: #fff;
     font-size: 5em;
-    margin-top: 33px;
+    margin-top: 100px;
   }
 
   #secondary-header {
@@ -347,7 +347,7 @@
     border-color: #ff5a5f;
     color: #fff;
     span.main-toggle-span {
-    background-color: #fff;
+      background-color: #fff;
     }
   }
 
@@ -370,32 +370,26 @@
     margin-top: 8px;
     line-height: 35px !important;
   }
+
+  #dropdown-list {
+    display: block;
+    float: right;
+  }
 }
 
 // Desktop //
 
 @media screen and (min-width: 1025px) {
-  #main-toggle-nav {
-    background-color: #ff5a5f;
-    border-color: #ff5a5f;
-    color: #fff;
-    span.main-toggle-span {
-    background-color: #fff;
-    }
-  }
 
-  ul#dropdown-list a:hover {
-    background-color: #0A4544;
-  }
-
-  ul#dropdown-list a {
-    background-color: #17706E;
+  ul#dropdown-list li:hover {
+    background-color: transparent;
+    text-decoration: none;
   }
 
   .btn-dropdown {
     font-size: 1em;
     height: 2.45em;
-    color: #fff !important;
+    color: #788887 !important;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -404,9 +398,20 @@
     line-height: 30px !important;
   }
 
+  #dropdown-list {
+    display: block;
+    float: right;
+  }
+
   #dropdown-link {
     display: inline-block;
     margin-left: 30px;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  #dropdown-link a:hover {
+    background-color: transparent;
   }
 
   #user-name {
@@ -423,7 +428,7 @@
     float: left;
     text-decoration: none;
     color: #fff;
-    font-size: 1.7em;
+    font-size: 2em;
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
     margin-left: 1.2em;
@@ -451,7 +456,7 @@
     margin: 0 auto;
     .session-link {
       color: #fff;
-      font-size: 1.2em;
+      font-size: 1.3em;
       text-decoration: none;
     }
     .session-link:nth-child(1) {
@@ -467,7 +472,7 @@
 
   #secondary-header {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   #search-wrapper {
