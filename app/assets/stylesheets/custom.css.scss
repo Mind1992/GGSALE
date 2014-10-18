@@ -7,7 +7,97 @@
 
 // Mobile //
 @media only screen and (max-width: 479px) {
+// All //
+   body.all {
+    padding-top: 124px;
+  }
 
+  .sale-thumb {
+   border-top: 1px solid #ABC2C1;
+   padding-top: 10px;
+  }
+
+  .sale-cover-mobile {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+  }
+  .sale-cover-mobile2 {
+    display: none;
+  }
+
+  .sale-cover-tablet {
+    display: none;
+  }
+
+  .sale-cover-desktop {
+    display: none;
+  }
+
+  .icon-fav {
+    display: none;
+  }
+
+  .icon-unfav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .date {
+    display: inline-block;
+    padding-top: -5px;
+  }
+
+// Application //
+  #guest-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+  }
+
+  .all-links:nth-child(2) {
+    margin-left: 9px;
+  }
+
+  #logo-all {
+    color: #ff5a5f;
+    font-size: 2.4em;
+    letter-spacing: -1px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: "Istok Web", sans-serif;
+    text-decoration: none;
+  }
+
+  #all-search {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    height: 2.64em;
+    font-size: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #all-search-btn {
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    height: 48px;
+    width: 120px;
+  }
+
+  .main-toggle-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+// Main //
   ul#dropdown-list a:hover {
     background-color: #0A4544;
   }
@@ -132,6 +222,105 @@
 
 // Mobile 2 //
 @media only screen and (min-width: 480px) and (max-width: 767px){
+// All //
+  body.all {
+    padding-top: 126px;
+  }
+
+  .sale-thumb {
+   border-top: 1px solid #ABC2C1;
+   padding-top: 15px;
+   padding-bottom: 15px;
+  }
+
+  .sale-cover-mobile2 {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .sale-cover-mobile {
+    display: none;
+  }
+
+  .sale-cover-tablet {
+    display: none;
+  }
+
+  .sale-cover-desktop {
+    display: none;
+  }
+
+  .icon-fav {
+    display: none;
+  }
+
+   .icon-unfav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .date {
+    display: inline-block;
+    padding-top: -5px;
+  }
+
+// Application //
+  #guest-links {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    margin-top: 8px;
+    font-size: 1.2em;
+  }
+
+  #guest-links a:nth-child(1) {
+    margin-left: -12%;
+  }
+
+  .all-links:nth-child(2) {
+    margin-left: 1.2em;
+  }
+
+  #logo-all {
+    color: #ff5a5f;
+    font-size: 2.3em;
+    letter-spacing: -1px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: "Istok Web", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  #all-search {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    height: 2.64em;
+    font-size: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #all-search-btn {
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    height: 48px;
+    width: 120px;
+  }
+
+  .main-toggle-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+// Main //
   ul#dropdown-list a:hover {
     background-color: #0A4544;
   }
@@ -252,7 +441,116 @@
 
 // Tablets //
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+// All //
+  body.all {
+    padding-top: 100px;
+  }
 
+  .sale-thumb {
+   border-top: 1px solid #ABC2C1;
+   padding-top: 15px;
+   padding-bottom: 15px;
+  }
+
+  .sale-cover-mobile2 {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .sale-cover-mobile {
+    display: none;
+  }
+
+  .sale-cover-tablet {
+    display: none;
+  }
+
+  .sale-cover-desktop {
+    display: none;
+  }
+
+  .icon-fav {
+    display: none;
+  }
+
+   .icon-unfav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .date {
+    display: inline-block;
+    padding-top: -5px;
+  }
+
+// Application //
+  #guest-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    font-size: 1.4em;
+  }
+
+  #guest-links a:nth-child(1) {
+    margin-left: 20%;
+  }
+
+  .all-links:nth-child(2) {
+    margin-left: 1em;
+  }
+
+  #logo-all {
+    color: #ff5a5f;
+    font-size: 2.3em;
+    letter-spacing: -1px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: "Istok Web", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  #all-search {
+    width: 14em;
+    display: inline-block;
+    float: left;
+    height: 2.3em;
+    font-size: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #all-search-btn {
+    display: inline-block;
+    font-size: 18px;
+    height: 41px;
+    width: 90px;
+  }
+
+  .main-toggle-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #all-dropdown-link {
+    background-color: transparent;
+    text-decoration: none;
+
+  }
+
+  #all-dropdown-link a:hover {
+    background-color: transparent;
+  }
+// Main //
   #user-name {
     color: #fff;
   }
@@ -380,7 +678,133 @@
 // Desktop //
 
 @media screen and (min-width: 1025px) {
+// All //
+  .sale-thumb {
+   border-top: 1px solid #ABC2C1;
+   padding-top: 15px;
+   margin-right: 50px;
+   margin-left: 3px;
+  }
 
+  .sale-cover-mobile2 {
+    display: none;
+  }
+
+  .sale-cover-mobile {
+    display: none;
+  }
+
+  .sale-cover-tablet {
+    display: none;
+  }
+
+  .sale-cover-desktop {
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+  }
+
+  .icon-fav {
+    display: none;
+  }
+
+   .icon-unfav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .date {
+    display: inline-block;
+  }
+
+// Application //
+  #guest-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    font-size: 1.3em;
+  }
+
+  #guest-links a:nth-child(1) {
+    margin-left: 20%;
+  }
+
+  .all-links:nth-child(2) {
+    margin-left: 1em;
+  }
+
+  #logo-all {
+    color: #ff5a5f;
+    font-size: 2.3em;
+    letter-spacing: -1px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: "Istok Web", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+  }
+
+
+  #all-search {
+    width: 14em;
+    display: inline-block;
+    float: left;
+    height: 2.3em;
+    font-size: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #all-search-btn {
+    display: inline-block;
+    font-size: 18px;
+    height: 41px;
+    width: 90px;
+  }
+
+  .main-toggle-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #all-dropdown-link {
+    background-color: transparent;
+    text-decoration: none;
+
+  }
+
+  #all-dropdown-link a:hover {
+    background-color: transparent;
+  }
+
+  #map-wrapper {
+    width: 40%;
+    height: 100%;
+    float: left;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  html.all, body.all {
+    height: 100%;
+  }
+
+   body.all {
+    padding-top: 51px;
+  }
+
+
+// Main //
   ul#dropdown-list li:hover {
     background-color: transparent;
     text-decoration: none;
@@ -505,7 +929,8 @@
     border-bottom-left-radius: 0;
   }
 }
-// Application layout //
+
+// All //
 
 video#bgvid {
   position: fixed; right: 0; bottom: 0;
@@ -536,55 +961,15 @@ body {
   width:80%;
 }
 
-// Google map //
-#map-wrapper {
-  width: 40%;
-  height: 100%;
-  float: left;
+.all-links {
+  color: #607080;
+  text-decoration: none !important;
 }
 
-#map {
-  width: 100%;
-  height: 100%;
-}
-
-// All layout //
 .glyphicon-user {
   font-size: 1.7em;
   padding-right: 0.1em;
   color: #fff;
-}
-
-#logo-all {
-  float: left;
-  color: #ff5a5f;
-  margin-right: 10px;
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  padding-top: 12px;
-  font-weight: bold;
-  line-height: 1;
-  font: bold "Istok Web", sans-serif;
-  text-decoration: none;
-  margin-left: -45px;
-}
-
-html.all, body.all {
-  height: 100%;
-}
-
-body.all {
-  padding-top: 51px;
-}
-
-#all-search {
-  width: 250px;
-  margin-left: 10px;
-}
-
-.all-links {
-  color: #607080;
-  text-decoration: none !important;
 }
 
 
