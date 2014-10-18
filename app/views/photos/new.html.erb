@@ -1,11 +1,7 @@
-
 <h1 class="text-center add-photo-header">Your photos</h1>
-
 <ul class="row" id="photos-list">
 </ul>
-
 <div id="dropzone" class="fade">Drop pictures here</div>
-
 <%= form_for [@sale,@photo] do |f| %>
   <%= f.file_field :image, id: 'file-field', required: true, multiple: true, name: 'photo[image]' %>
   <div class="progress-wrapper">

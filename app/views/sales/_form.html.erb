@@ -1,52 +1,52 @@
 <div class="container-fluid center_div">
-<%= form_for @sale, :html => {role: "form", class: "form-horizontal", :multipart => true} do |f| %>
-  <h2 class="col-sm-offset-3 col-sm-6 text-center">Add a sale</h2>
-  <div class="form-group">
- 		<div class="col-sm-offset-3 col-sm-6">
-      <%= f.label "Address, City, State" %>
-  		<%= f.text_field :address, autofocus: true, class: "form-control", placeholder: "1234 SW 66th Ave, Portland, OR" %>
-	  </div>
-	</div>
-	<div class="form-group">
-	  <div class="col-sm-offset-3 col-sm-6">
-      <%= f.label :title %>
-	  	<%= f.text_field :title, class: "form-control", placeholder: "Title" %>
-	  </div>
-	</div>
-	<div class="form-group">
-    <div class="col-sm-offset-3 col-sm-6">
-      <%= f.label :description %>
-      <%= f.text_area :description, class: "form-control", placeholder: "Description" %>
+  <%= form_for @sale, :html => {role: "form", class: "form-horizontal", :multipart => true} do |f| %>
+    <h2 class="col-sm-offset-3 col-sm-6 text-center">Add a sale</h2>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label "Address, City, State" %>
+        <%= f.text_field :address, autofocus: true, class: "form-control", placeholder: "1234 SW 66th Ave, Portland, OR" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-6">
-      <%= f.label "Sale start date" %>
-      <%= f.date_field :start_date, class: "form-control"%>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-6">
-      <%= f.label "Sale end date" %>
-      <%= f.date_field :end_date, class: "form-control"%>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label :description %>
+        <%= f.text_area :description, class: "form-control", placeholder: "Description" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-6">
-      <%= f.label "Sale start time" %>
-      <%= f.time_field :start_time, class: "form-control"%>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label "Sale start date" %>
+        <%= f.date_field :start_date, class: "form-control"%>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-6">
-      <%= f.label "Sale end time" %>
-      <%= f.time_field :end_time, class: "form-control"%>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label "Sale end date" %>
+        <%= f.date_field :end_date, class: "form-control"%>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-     <div class="col-sm-offset-3 col-sm-6 text-center">
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label "Sale start time" %>
+        <%= f.time_field :start_time, class: "form-control"%>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <%= f.label "Sale end time" %>
+        <%= f.time_field :end_time, class: "form-control"%>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6 text-center">
         <%= f.submit "Continue", class: "btn btn-default" %>
+      </div>
     </div>
-  </div>
-	<% end %>
+  <% end %>
 </div>

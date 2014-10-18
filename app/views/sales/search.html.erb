@@ -6,8 +6,9 @@
 			<a href="<%= sale_path(sale) %>" data-no-turbolink='true'>
 		  	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 sale-thumb">
 	        <% if current_user %>
-  					<%= link_to "unfavorite", favorite_sale_path(sale, type: "unfavorite"), class: 'icon-unfav', method: :put %>
-					<% end %>
+  					<span><%= link_to "unfavorite", favorite_sale_path(sale, type: "unfavorite"), class: 'icon-unfav', method: :put %></span>
+            <span><%= link_to glyph(:heart), favorite_sale_path(sale, type: "favorite"), class: 'icon-fav', method: :put %></span>
+          <% end %>
   				<% if sale.photos.any? %>
   		      <%= link_to image_tag(sale.photos.first.image.thumb('100x80#').url, class: 'sale-cover-mobile'),
   		        		sale_path(sale) %>
@@ -17,7 +18,6 @@
                   sale_path(sale) %>
             <%= link_to image_tag(sale.photos.first.image.thumb('358x240#').url, class: 'sale-cover-desktop'),
                   sale_path(sale) %>
-  		      <span><%= link_to glyph(:heart), favorite_sale_path(sale, type: "favorite"), class: 'icon-fav', method: :put %></span>
 	        <% end %>
 	        <p class="text-left title"><%= sale.title %></p>
 	        <p class="text-left address"><%= sale.address %></p>
