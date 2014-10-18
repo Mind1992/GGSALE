@@ -927,6 +927,9 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+  #file-field {
+  display: none;
+  }
 }
 
 // All //
@@ -1037,8 +1040,4 @@ body {
   @include transition-duration(0.5s);
   @include transition-timing-function(ease-out);
   @include opacity(1);
-}
-
-#file-field {
-  display: none;
 }
