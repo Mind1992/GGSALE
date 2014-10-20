@@ -2,27 +2,26 @@
   <source src="/assets/ggsale-intro.webm" type="video/webm" />
   <source src="/assets/ggsale-intro.mp4" type="video/mp4" />
 </video>
-
 <div class="row">
-	<div class="col-xs-12">
-		<h1 id="main-header" class="text-uppercase text-center">Find Your Bargain</h1>
-	</div>
+  <div class="col-xs-12">
+    <h1 id="main-header" class="text-uppercase text-center">Find Your Bargain</h1>
+  </div>
 </div>
 <div class="row">
-	<div class="col-xs-12">
-		<p class="text-center" id="secondary-header">Buy and sell things effortlessly</p>
-	</div>
+  <div class="col-xs-12">
+    <p class="text-center" id="secondary-header">Buy and sell things effortlessly</p>
+  </div>
 </div>
 <div class="row">
-	<div class="col-xs-12" id="search-parent">
-		<%= form_tag search_sales_path, class: "form-horizontal", role: "form", method: :get do %>
-			<div id="search-wrapper">
-				<div class="form-group">
-					<%= text_field_tag :address, params[:address], placeholder: "Where are you looking?", class: "form-control", id: "main-search" %>
-					<%= submit_tag "Search", class: "btn", id: "main-search-btn", 'data-no-turbolink' => true %>
-				</div>
-			</div>
-		<% end %>
-	</div>
+  <div class="col-xs-12" id="search-parent">
+    <%= form_tag search_sales_path, class: "form-horizontal", role: "form", method: :get do %>
+      <div id="search-wrapper">
+        <div class="form-group">
+          <%= text_field_tag :address, params[:address], placeholder: "Where are you looking?", class: "form-control", id: "main-search" %>
+          <%= submit_tag "Search", class: "btn", id: "main-search-btn", 'data-no-turbolink' => true %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
 
