@@ -65,7 +65,7 @@ class SalesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@sales) do |sale, marker|
       marker.lat sale.latitude
       marker.lng sale.longitude
-      marker.infowindow render_to_string(:partial => "/sales/my_template", :locals =>{ :sale => sale })
+      marker.infowindow render_to_string(:partial => "/sales/infowindow", :locals =>{ :sale => sale })
       marker.picture({
         "url" => view_context.image_path('google_map_icon.png'),
         "width" => 64,

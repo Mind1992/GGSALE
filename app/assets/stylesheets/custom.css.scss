@@ -683,6 +683,7 @@
    padding-top: 15px;
    margin-right: 50px;
    margin-left: 3px;
+   position: relative;
   }
 
   .sale-cover-mobile2 {
@@ -704,7 +705,15 @@
   }
 
   .icon-fav {
-    display: none;
+    position: absolute;
+    top: 9%;
+    right: -15%;
+    font-size: 2.8em;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .icon-fav:hover {
+    color: rgba(255, 90, 95, 0.9);
   }
 
    .icon-unfav {
