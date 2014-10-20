@@ -3,6 +3,7 @@
 <head>
   <title>Gigisale</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <style><%= yield :stylesheets %></style>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Istok+Web:700' rel='stylesheet' type='text/css'>
@@ -41,7 +42,7 @@
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right" id="dropdown-list">
                 <li class="dropdown" id="all-dropdown-link">
-                  <a data-toggle="dropdown" data-target="#"><b class="glyphicon glyphicon-user"></b><spam id="user-name"><%= current_user.username %></spam><b class="all-caret"></b></a>
+                  <a data-toggle="dropdown" data-target="#"><b id="all-glyph" class="glyphicon glyphicon-user"></b><span id="all-user-name"><%= current_user.username %></span><b class="caret" id="all-caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><%= link_to "Add Sale", new_sale_path, id: "new_sale", class: "btn  btn-dropdown", remote: true %></li>
                     <li><%= link_to "Manage Sales", user_path(current_user), id: "user_sales", class: "btn btn-dropdown" %></li>
