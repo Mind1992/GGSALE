@@ -11,13 +11,13 @@
           <% end %>
           <% if sale.photos.any? %>
             <%= link_to image_tag(sale.photos.first.image.thumb('100x80#').url, class: 'sale-cover-mobile'),
-    sale_path(sale) %>
+                sale_path(sale) %>
             <%= link_to image_tag(sale.photos.first.image.thumb('170x130#').url, class: 'sale-cover-mobile2'),
-    sale_path(sale) %>
+                sale_path(sale) %>
             <%= link_to image_tag(sale.photos.first.image.thumb('270x180#').url, class: 'sale-cover-tablet'),
-    sale_path(sale) %>
+                sale_path(sale) %>
             <%= link_to image_tag(sale.photos.first.image.thumb('358x240#').url, class: 'sale-cover-desktop'),
-    sale_path(sale) %>
+                sale_path(sale) %>
           <% end %>
           <p class="text-left title"><%= sale.title %></p>
           <p class="text-left address"><%= sale.address %></p>
