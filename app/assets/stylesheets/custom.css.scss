@@ -982,7 +982,6 @@
 }
 
 // All //
-
 video#bgvid {
   position: fixed; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
@@ -1025,13 +1024,11 @@ body {
 
 
 // Authentication //
-
 .check_label {
   margin-left: 5px;
 }
 
 // Drop zone
-
 #photos-list {
   padding: 0;
   margin: 0;
@@ -1089,4 +1086,51 @@ body {
   @include transition-duration(0.5s);
   @include transition-timing-function(ease-out);
   @include opacity(1);
+}
+
+// show page
+#show-title {
+  display: inline-block;
+  margin-left: 60%;
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+}
+
+#show-address {
+  display: inline-block;
+  margin-left: 30%;
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+}
+
+#show-date {
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 9%;
+}
+
+#show-time {
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 9%;
+}
+
+#show-description {
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 34%;
+}
+
+#info-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
 }
