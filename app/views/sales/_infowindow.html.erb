@@ -1,12 +1,11 @@
 <div id="carousel-pictures" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-     <% sale.photos.each_with_index do |photo, index| %>
+    <% sale.photos.each_with_index do |photo, index| %>
       <div class="<% if index == 0 %>item active<% else %>item<% end %>">
         <%= link_to image_tag(photo.image.thumb('180x180#').url, class: 'img-thumbnail'),
         sale_path(sale) %></div>
     <% end %>
   </div>
-
   <a class="left carousel-control" href="#carousel-pictures" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
