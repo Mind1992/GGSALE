@@ -7,6 +7,61 @@
 
 // Mobile //
 @media only screen and (max-width: 479px) {
+// show page
+#show-title {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  line-height: 1px;
+}
+
+#show-address {
+  display: inline-block;
+  font-size: 1em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#show-date {
+  font-size: 1em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-time {
+  font-size: 1em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-description {
+  font-size: 1em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#description-title {
+  font-size: 1.2em;
+}
+
+#date-title {
+  font-size: 1.2em;
+}
+
+#time-title {
+  font-size: 1.2em;
+}
+
 // All //
    body.all {
     padding-top: 124px;
@@ -231,6 +286,60 @@
 
 // Mobile 2 //
 @media only screen and (min-width: 480px) and (max-width: 767px){
+// show page
+#show-title {
+  display: inline-block;
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  line-height: 1px;
+}
+
+#show-address {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#show-date {
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-time {
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-description {
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#description-title {
+  font-size: 1.2em;
+}
+
+#date-title {
+  font-size: 1.2em;
+}
+
+#time-title {
+  font-size: 1.2em;
+}
 // All //
   body.all {
     padding-top: 126px;
@@ -459,6 +568,60 @@
 
 // Tablets //
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+// show page
+#show-title {
+  display: inline-block;
+  font-size: 1.9em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  line-height: 1px;
+}
+
+#show-address {
+  display: inline-block;
+  font-size: 1.3em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#show-date {
+  font-size: 1.3em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-time {
+  font-size: 1.3em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-description {
+  font-size: 1.3em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#description-title {
+  font-size: 1.2em;
+}
+
+#date-title {
+  font-size: 1.2em;
+}
+
+#time-title {
+  font-size: 1.2em;
+}
 // All //
   body.all {
     padding-top: 100px;
@@ -705,6 +868,61 @@
 // Desktop //
 
 @media screen and (min-width: 1025px) {
+// show page
+#show-title {
+  display: inline-block;
+  font-size: 1.7em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  line-height: 1px;
+}
+
+#show-address {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#show-date {
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-time {
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#show-description {
+  font-size: 1.2em;
+  color: #565a5c;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#description-title {
+  font-size: 1.2em;
+}
+
+#date-title {
+  font-size: 1.2em;
+}
+
+#time-title {
+  font-size: 1.2em;
+}
+
 // All //
   .sale-thumb {
    padding-top: 15px;
@@ -1086,51 +1304,4 @@ body {
   @include transition-duration(0.5s);
   @include transition-timing-function(ease-out);
   @include opacity(1);
-}
-
-// show page
-#show-title {
-  display: inline-block;
-  margin-left: 60%;
-  font-size: 1.7em;
-  color: #565a5c;
-  font-weight: 400;
-}
-
-#show-address {
-  display: inline-block;
-  margin-left: 30%;
-  font-size: 1.7em;
-  color: #565a5c;
-  font-weight: 400;
-}
-
-#show-date {
-  font-size: 1.7em;
-  color: #565a5c;
-  font-weight: 400;
-  display: inline-block;
-  margin-left: 9%;
-}
-
-#show-time {
-  font-size: 1.7em;
-  color: #565a5c;
-  font-weight: 400;
-  display: inline-block;
-  margin-left: 9%;
-}
-
-#show-description {
-  font-size: 1.7em;
-  color: #565a5c;
-  font-weight: 400;
-  display: inline-block;
-  margin-left: 34%;
-}
-
-#info-wrapper {
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
 }
