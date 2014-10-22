@@ -7,6 +7,34 @@
 
 // Mobile //
 @media only screen and (max-width: 479px) {
+//dropzone
+#dropzone {
+  display: none;
+}
+
+#upload-photos {
+  font-size: 1.4em;
+  height: 2.45em;
+  border-color: #ff5a5f;
+  border-bottom-color: #e00007;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: auto;
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 40%;
+}
+
+#upload-wrapper {
+  display: inline-block;
+  margin-top: 10%;
+}
+
+.add-photo-header {
+  margin-top: 10%;
+}
+
 // show page
 #show-title {
   display: inline-block;
@@ -286,6 +314,33 @@
 
 // Mobile 2 //
 @media only screen and (min-width: 480px) and (max-width: 767px){
+//dropzone
+#dropzone {
+  display: none;
+}
+
+#upload-photos {
+  font-size: 1.4em;
+  height: 2.45em;
+  border-color: #ff5a5f;
+  border-bottom-color: #e00007;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: auto;
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 40%;
+}
+
+#upload-wrapper {
+  display: inline-block;
+  margin-top: 10%;
+}
+
+.add-photo-header {
+  margin-top: 10%;
+}
 // show page
 #show-title {
   display: inline-block;
@@ -568,6 +623,30 @@
 
 // Tablets //
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//dropzone
+#dropzone {
+  display: none;
+}
+
+#upload-photos {
+  font-size: 1.4em;
+  height: 2.45em;
+  border-color: #ff5a5f;
+  border-bottom-color: #e00007;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: auto;
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 35%;
+}
+
+#upload-wrapper {
+  display: inline-block;
+  margin-top: 5%;
+}
+
 // show page
 #show-title {
   display: inline-block;
@@ -868,6 +947,19 @@
 // Desktop //
 
 @media screen and (min-width: 1025px) {
+#upload-photos {
+  font-size: 1.4em;
+  height: 2.45em;
+  border-color: #ff5a5f;
+  border-bottom-color: #e00007;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: auto;
+  display: inline-block;
+  margin-bottom: 10%;
+  width: 40%;
+}
+
 // show page
 #show-title {
   display: inline-block;
