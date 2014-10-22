@@ -8,5 +8,5 @@
 * *DONE* As a seller, I want to upload multiple photos, so buyers can see things that I am selling.
 * *DONE* As a seller, I want to have a drag and drop zone for pictures.
 * *DONE* As a seller, I want to see the preview of the pictures that I uploaded and be able to remove any of them before submitting the sale.
-* *NEW* As a user, I want to see pictures in the slideshow (like carousel)
+* *DONE* As a user, I want to see pictures in the slideshow (like carousel)
 * *NEW* As a user, I want to have a dashboard, so I can manage my garage sales and look at favorite sales.
