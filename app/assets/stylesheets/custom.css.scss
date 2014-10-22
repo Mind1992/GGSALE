@@ -7,6 +7,10 @@
 
 // Mobile //
 @media only screen and (max-width: 479px) {
+//background-video
+.hide-mobile {
+  display: none;
+}
 //dropzone
 #dropzone {
   display: none;
