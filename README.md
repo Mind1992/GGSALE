@@ -10,7 +10,28 @@ The app is still in development and gets updated daily. Some of the built featur
 
 
 ## Setup
-Clone this repository or download the .zip. In Terminal open up the folder gigisale run $ bundle install to install all the required gems for the app, then run $ rake db:create to create a database on your harddrive, and run $ rails server. Then go to your browser and go to this link http://0.0.0.0:3000/.
+Clone this repository in your terminal:
+
+```console
+$ git clone https://github.com/Mind1992/GGSALE.git
+```
+
+Run bundle to install all the needed gems:
+
+```console
+$ bundle install
+```
+
+Set up the databases for development and testing environment:
+
+```console
+$ rake db:create db:migrate
+```
+Start your local rails server:
+
+```console
+$ rails s
+```
 
 ## Author
 Sergii Mertsalov
