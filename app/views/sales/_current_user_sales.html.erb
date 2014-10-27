@@ -4,6 +4,7 @@
       <a href="<%= sale_path(f) %>" data-no-turbolink='true'>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 sale-thumb" id="<%= f.id %>">
           <span><%= link_to glyph(:trash), sale_path(f), method: :delete, data: { confirm: "Are you sure?"}, remote: :true %></span>
+          <span><%= link_to glyph(:pencil), edit_sale_path(f),class: "update-sale"%></span>
           <% if f.photos.any? %>
             <%= link_to image_tag(f.photos.first.image.thumb('100x80#').url, class: 'sale-cover-mobile'),
                 sale_path(f) %>

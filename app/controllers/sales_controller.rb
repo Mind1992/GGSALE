@@ -36,10 +36,19 @@ class SalesController < ApplicationController
     end
   end
 
+  def edit
+    @sale = Sale.find(params[:id])
+  end
+
   def update
     @sale = Sale.find(params[:id])
     @photos = @sale.photos
-    @sale.update(sale_params)
+    if @sale.update(sale_params)
+      flash[:notice] = "Your sale updated successfully!"
+      redirect_to user_path
+    else
+      render edit_sale_path
+    end
   end
 
   def destroy
@@ -94,6 +103,6 @@ class SalesController < ApplicationController
 private
 
   def sale_params
-    params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id)
+    params.require(:sale).permit(:address, :title, :description, :start_date, :end_date, :start_time, :end_time, :user_id, :latitude, :longitude)
   end
 end
