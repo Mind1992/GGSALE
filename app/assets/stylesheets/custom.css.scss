@@ -59,6 +59,18 @@
   margin-top: 10%;
 }
 
+.photo-trash {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-size: 3em;
+  color: rgba(255,255,255,0.9);
+}
+
+.photo-trash:hover {
+  color: rgba(255, 90, 95, 0.9);
+}
+
 // show page
 #show-title {
   display: inline-block;
@@ -388,6 +400,18 @@
 .add-photo-header {
   margin-top: 10%;
 }
+
+.photo-trash {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-size: 3.5em;
+  color: rgba(255,255,255,0.9);
+}
+
+.photo-trash:hover {
+  color: rgba(255, 90, 95, 0.9);
+}
 // show page
 #show-title {
   display: inline-block;
@@ -714,6 +738,18 @@
 #upload-wrapper {
   display: inline-block;
   margin-top: 5%;
+}
+
+.photo-trash {
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  font-size: 4em;
+  color: rgba(255,255,255,0.9);
+}
+
+.photo-trash:hover {
+  color: rgba(255, 90, 95, 0.9);
 }
 
 // show page
@@ -1052,6 +1088,17 @@
   display: inline-block;
   margin-bottom: 10%;
   width: 40%;
+}
+.photo-trash {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  font-size: 4em;
+  color: rgba(255,255,255,0.9);
+}
+
+.photo-trash:hover {
+  color: rgba(255, 90, 95, 0.9);
 }
 
 // show page
@@ -1470,7 +1517,7 @@ body {
   line-height: 50px;
   border: 1px solid darken(palegreen, 10%);
   @include border-radius(10px);
-  margin: 0 auto 20px;
+  margin: 20px auto 20px;
 }
 
 #dropzone.in {

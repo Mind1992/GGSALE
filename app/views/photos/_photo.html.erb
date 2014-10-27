@@ -1,4 +1,4 @@
 <div class="col-xs-4" id='<%= photo.id %>'>
   <%= link_to image_tag(photo.image.thumb('180x180#').url, class: 'img-thumbnail img-responsive'), photo.image.remote_url, target: '_blank' %>
-  <%= link_to "remove", sale_photo_path(photo.sale, photo), method: :delete, remote: :true %>
+  <%= link_to glyph(:trash), sale_photo_path(photo.sale, photo), class: 'photo-trash', method: :delete, remote: :true %>
 </div>
