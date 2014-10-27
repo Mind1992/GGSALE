@@ -1,12 +1,6 @@
-<h1><%= @user.username %></h1>
-<ul><% @user.favorites.each do |f| %>
-	<li>
-		<%= f.title %>
-		<% f.photos.each do |photo| %>
-			<%= link_to image_tag(photo.image.thumb('180x180#').url, class: 'img-thumbnail'),
-          photo.image.remote_url, target: '_blank' %>
-		<% end %>
-	</li>
-	<% end %>
-</ul>
+<div class="row" id="user-menu">
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2"><%= link_to "Favorites", favorites_sales_path, id: "favorites_sales", class: "btn", remote: true%></div>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2"><%= link_to "Your sales", current_user_sales_sales_path, id: "current_user_sales", class: "btn", remote: true %></div>
+</div>
+<div id="wrapper-all"></div>
 

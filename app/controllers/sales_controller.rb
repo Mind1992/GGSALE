@@ -42,6 +42,15 @@ class SalesController < ApplicationController
     @sale.update(sale_params)
   end
 
+  def destroy
+    @sale = Sale.find(params[:id])
+    @sale.destroy
+    respond_to do |format|
+      format.html { redirect_to user_path}
+      format.js
+    end
+  end
+
   def favorite
     @sale = Sale.find(params[:id])
     type = params[:type]
@@ -54,6 +63,14 @@ class SalesController < ApplicationController
     else
       redirect_to :back, notice: 'Nothing happened.'
     end
+  end
+
+  def favorites
+    @favorites = current_user.favorites
+  end
+
+  def current_user_sales
+    @current_user_sales = current_user.sales
   end
 
   def search

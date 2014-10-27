@@ -7,10 +7,30 @@
 
 // Mobile //
 @media only screen and (max-width: 479px) {
-//background-video
-.hide-mobile {
-  display: none;
+//favorites
+#user-menu {
+  margin-top: 20px;
 }
+
+#favorites_sales {
+  font-size: 1.3em;
+  height: 3em;
+  width: 100%;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: 14px;
+}
+
+#current_user_sales {
+  margin-top: 5px;
+  font-size: 1.3em;
+  height: 3em;
+  width: 100%;
+  background-color: #17706E;
+  color: #fff;
+  padding-top: 14px;
+}
+
 //dropzone
 #dropzone {
   display: none;
@@ -318,6 +338,29 @@
 
 // Mobile 2 //
 @media only screen and (min-width: 480px) and (max-width: 767px){
+//favorites
+#user-menu {
+  margin-top: 20px;
+}
+
+#favorites_sales {
+  font-size: 1.5em;
+  height: 3em;
+  width: 100%;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: 14px;
+}
+
+#current_user_sales {
+  margin-top: 5px;
+  font-size: 1.5em;
+  height: 3em;
+  width: 100%;
+  background-color: #17706E;
+  color: #fff;
+  padding-top: 14px;
+}
 //dropzone
 #dropzone {
   display: none;
@@ -627,6 +670,28 @@
 
 // Tablets //
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+// favorites
+#user-menu {
+  margin-top: 20px;
+}
+
+#favorites_sales {
+  font-size: 1.5em;
+  height: 3em;
+  width: 100%;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: 14px;
+}
+
+#current_user_sales {
+  font-size: 1.5em;
+  height: 3em;
+  width: 100%;
+  background-color: #17706E;
+  color: #fff;
+  padding-top: 14px;
+}
 //dropzone
 #dropzone {
   display: none;
@@ -951,6 +1016,31 @@
 // Desktop //
 
 @media screen and (min-width: 1025px) {
+#user-menu {
+  margin-top: 20px;
+  background-color: rgba(86, 90, 92, 0.35);
+}
+
+#favorites_sales {
+  margin-left: 15px;
+  font-size: 1em;
+  height: 3em;
+  width: 100%;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding-top: 10px;
+}
+
+#current_user_sales {
+  margin-left: 10px;
+  font-size: 1em;
+  height: 3em;
+  width: 100%;
+  background-color: #17706E;
+  color: #fff;
+  padding-top: 10px;
+}
+
 #upload-photos {
   font-size: 1.4em;
   height: 2.45em;
