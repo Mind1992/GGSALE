@@ -3,21 +3,18 @@
     <% @current_user_sales.each do |f| %>
       <a href="<%= sale_path(f) %>" data-no-turbolink='true'>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 sale-thumb" id="<%= f.id %>">
-          <span><%= link_to glyph(:trash), sale_path(f), method: :delete, data: { confirm: "Are you sure?"}, remote: :true %></span>
-          <span><%= link_to glyph(:pencil), edit_sale_path(f),class: "update-sale"%></span>
+          <span><%= link_to glyph(:trash), sale_path(f), id: "remove-sale", method: :delete, data: { confirm: "Are you sure?"}, remote: :true %></span>
+          <span><%= link_to glyph(:pencil), edit_sale_path(f), id: "update-sale"%></span>
           <% if f.photos.any? %>
-            <%= link_to image_tag(f.photos.first.image.thumb('100x80#').url, class: 'sale-cover-mobile'),
+            <%= link_to image_tag(f.photos.first.image.thumb('700x500#').url, class: ' sale-photo sale-cover-mobile img-responsive'),
                 sale_path(f) %>
-            <%= link_to image_tag(f.photos.first.image.thumb('170x130#').url, class: 'sale-cover-mobile2'),
+            <%= link_to image_tag(f.photos.first.image.thumb('700x500#').url, class: 'sale-photo sale-cover-mobile2'),
                 sale_path(f) %>
-            <%= link_to image_tag(f.photos.first.image.thumb('270x180#').url, class: 'sale-cover-tablet'),
+            <%= link_to image_tag(f.photos.first.image.thumb('1024x600#').url, class: 'sale-cover-tablet'),
                 sale_path(f) %>
             <%= link_to image_tag(f.photos.first.image.thumb('358x240#').url, class: 'sale-cover-desktop'),
                 sale_path(f) %>
           <% end %>
-          <p class="text-left title"><%= f.title %></p>
-          <p class="text-left address"><%= f.address %></p>
-          <p class="text-left date"><%= f.format_date %></p>
         </div>
       </a>
     <% end %>
